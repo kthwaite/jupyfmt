@@ -8,7 +8,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
 dependencies = [
-    "black >= 23.3",
+    "black[jupyter] >= 23.3",
     "psutil",
     "ipython",
 ]
