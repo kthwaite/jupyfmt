@@ -1,0 +1,23 @@
+[project]
+name = "jupyfmt"
+authors = [
+    {name = "Kit Thwaite", email = "28732700+kthwaite@users.noreply.github.com"},
+]
+description="Jupyter formatting using black; based on nb_black"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+    "black >= 23.3",
+    "psutil",
+    "ipython",
+]
+dynamic = ["version"]
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tools.setuptools]
+zip_safe = false
+py_modules=["jupyfmt"]
